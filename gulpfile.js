@@ -10,7 +10,7 @@ const resFolder = './dist';
 const prevFolder = './src';
 
 const copy = () => {
-    return gulp.src([`${prevFolder}/*.*`, `!${prevFolder}/*.html`, `!${prevFolder}/*.js`, `${prevFolder}/*.css`, `!${prevFolder}/*.scss`])
+    return gulp.src([`${prevFolder}/*.*`, `!${prevFolder}/*.html`, `!${prevFolder}/*.js`, `!${prevFolder}/*.css`, `!${prevFolder}/*.scss`])
         .pipe(gulp.dest(resFolder))
         .pipe(gulpConnect.reload())
 }
@@ -46,7 +46,7 @@ const watch = () => {
     gulp.watch(`${prevFolder}/*.html`, html);
     gulp.watch(`${prevFolder}/*.js`, script);
     gulp.watch(`${prevFolder}/*.scss`, scss);
-    gulp.watch([`${prevFolder}/*.*`, `!${prevFolder}/*.html`, `!${prevFolder}/*.js`], copy)
+    gulp.watch([`${prevFolder}/*.*`, `!${prevFolder}/*.html`, `!${prevFolder}/*.js`, `!${prevFolder}/*.scss`], copy)
 }
 
 const srv = () => {
