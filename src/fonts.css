@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Lexend Deca";
+    src:
+      local("Lexend Deca"),
+      url("fonts/LexendDeca/static/LexendDeca-Light.ttf") format("opentype");
+    font-weight: 300;
+}
+
+
+@font-face {
+    font-family: "Lexend Deca";
+    src:
+      local("Lexend Deca"),
+      url("fonts/LexendDeca/static/LexendDeca-Regular.ttf") format("opentype");
+    font-weight: 400;
+}
